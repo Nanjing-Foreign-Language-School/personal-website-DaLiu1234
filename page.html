@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>刘达｜学业与爱好</title>
+  <meta name="description" content="南京外国语学校 A-Level 学生刘达的个人主页，聚焦学业与游戏爱好。">
+  <style>
+    :root {
+      --bg: #0f1226;
+      --card: #171a33;
+      --text: #e6e9ff;
+      --muted: #aab0d9;
+      --accent: #7c5cff;
+      --accent2: #29c3ff;
+      --good: #34d399;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: radial-gradient(1200px 800px at 80% -10%, #182044 0%, var(--bg) 45%), var(--bg);
+      color: var(--text);
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 980px; margin: 0 auto; padding: 28px 20px 60px;
+    }
+    header {
+      display: grid; grid-template-columns: 84px 1fr; gap: 20px;
+      align-items: center; margin-bottom: 26px;
+    }
+    .avatar {
+      width: 84px; height: 84px; border-radius: 18px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: grid; place-items: center; color: #0b0f1f; font-weight: 800; font-size: 28px;
+      box-shadow: 0 12px 26px rgba(124,92,255,0.25);
+      user-select: none;
+    }
+    .title h1 {
+      margin: 0; font-size: 28px; letter-spacing: 0.2px;
+    }
+    .title p {
+      margin: 4px 0 0; color: var(--muted);
+    }
+    .tags {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;
+    }
+    .tag {
+      padding: 6px 10px; border-radius: 999px; font-size: 12px;
+      background: #21274a; color: var(--muted); border: 1px solid #2a3160;
+    }
+    .grid {
+      display: grid; grid-template-columns: 1fr; gap: 18px;
+    }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1.2fr 0.8fr; }
+    }
+    .card {
+      background: rgba(23, 26, 51, 0.72);
+      border: 1px solid #2a3160;
+      border-radius: 18px; padding: 18px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 6px 16px rgba(12,16,36,0.45);
+    }
+    .card h2 {
+      margin: 0 0 10px; font-size: 20px;
+    }
+    .card h3 {
+      margin: 10px 0 8px; font-size: 16px; color: var(--muted);
+    }
+    .list {
+      display: grid; gap: 10px;
+    }
+    .item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 12px; border-radius: 12px; background: #1b1f3e; border: 1px solid #2a3160;
+    }
+    .item .left { display: grid; gap: 2px; }
+    .label { font-weight: 600; }
+    .note { font-size: 13px; color: var(--muted); }
+    .pill {
+      padding: 6px 10px; border-radius: 999px; font-size: 12px;
+      background: #21274a; border: 1px solid #2a3160; color: var(--text);
+    }
+    .accent { color: var(--accent2); }
+    .progress {
+      height: 8px; border-radius: 999px; background: #21274a; overflow: hidden; margin-top: 8px;
+    }
+    .bar {
+      height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2));
+      width: 70%;
+    }
+    .bar.good { width: 85%; background: linear-gradient(90deg, var(--good), var(--accent2)); }
+    .bar.mid { width: 60%; }
+    .bar.low { width: 40%; background: linear-gradient(90deg, var(--warn), var(--accent)); }
+    .cta {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;
+    }
+    .btn {
+      padding: 10px 14px; border-radius: 12px; border: 1px solid #2a3160;
+      background: #1b1f3e; color: var(--text); cursor: pointer; font-weight: 600;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #0b0f1f; box-shadow: 0 8px 18px rgba(41,195,255,0.3);
+    }
+    .game-row {
+      display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center;
+      padding: 10px 12px; border-radius: 12px; background: #121635; border: 1px dashed #2a3160;
+    }
+    footer {
+      margin-top: 26px; color: var(--muted); text-align: center; font-size: 13px;
+    }
+    .spark {
+      background: radial-gradient(600px 600px at 20% 10%, rgba(124,92,255,0.25), transparent 60%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-label="LD">LD</div>
+      <div class="title">
+        <h1>刘达｜南京外国语学校 A-Level</h1>
+        <p>专注计算机科学与理工科，游戏里也追求策略与配合。</p>
+        <div class="tags">
+          <div class="tag">Computer Science</div>
+          <div class="tag">Maths / Further Maths</div>
+          <div class="tag">Physics</div>
+          <div class="tag">Chemistry</div>
+          <div class="tag">Clash Royale</div>
+          <div class="tag">王者荣耀</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- 学业模块 -->
+      <section class="card">
+        <h2>学业重点</h2>
+        <div class="list">
+          <div class="item">
+            <div class="left">
+              <div class="label">A-Level Computer Science</div>
+              <div class="note">数据结构、算法、计算机体系结构与软件工程思维</div>
+              <div class="progress"><div class="bar good"></div></div>
+            </div>
+            <div class="pill">目标：项目驱动</div>
+          </div>
+          <div class="item">
+            <div class="left">
+              <div class="label">Maths & Further Maths</div>
+              <div class="note">微积分、线代、组合与数论，竞赛思维加持</div>
+              <div class="progress"><div class="bar mid"></div></div>
+            </div>
+            <div class="pill">目标：严谨与抽象</div>
+          </div>
+          <div class="item">
+            <div class="left">
+              <div class="label">Physics</div>
+              <div class="note">力学与电磁学为主，实验与建模并行</div>
+              <div class="progress"><div class="bar"></div></div>
+            </div>
+            <div class="pill">目标：模型化</div>
+          </div>
+          <div class="item">
+            <div class="left">
+              <div class="label">Chemistry</div>
+              <div class="note">有机/无机与物化结合，注重推理与结构观</div>
+              <div class="progress"><div class="bar low"></div></div>
+            </div>
+            <div class="pill">目标：体系与细节</div>
+          </div>
+        </div>
+
+        <h3>计划与习惯</h3>
+        <div class="list">
+          <div class="item">
+            <div class="left">
+              <div class="label">每周项目时段</div>
+              <div class="note">CS 小项目：算法练习 / 可视化 / 游戏微工具</div>
+            </div>
+            <div class="pill">2 × 90 分钟</div>
+          </div>
+          <div class="item">
+            <div class="left">
+              <div class="label">题感保持</div>
+              <div class="note">数学与物理交替刷题，错误本复盘</div>
+            </div>
+            <div class="pill">间隔重复</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button class="btn primary" onclick="alert('加油，保持专注与好奇心！')">今天的关键任务</button>
+          <button class="btn" onclick="document.getElementById('notes').scrollIntoView({behavior:'smooth'})">查看学习笔记</button>
+        </div>
+      </section>
+
+      <!-- 爱好模块 -->
+      <section class="card spark">
+        <h2>游戏与策略</h2>
+
+        <div class="game-row">
+          <div>
+            <div class="label">Clash Royale（皇室战争）</div>
+            <div class="note">卡组构筑、费用管理与节奏控制。像做题一样，先解空间，再找最优解。</div>
+          </div>
+          <div class="pill">偏好：均衡卡组</div>
+        </div>
+
+        <div class="game-row">
+          <div>
+            <div class="label">王者荣耀</div>
+            <div class="note">英雄池与团队协作，信息优势与视野控制是关键。</div>
+          </div>
+          <div class="pill">角色：打野 / 中路</div>
+        </div>
+
+        <h3>把爱好变成优势</h3>
+        <ul class="list" style="list-style:none; padding:0; margin:0;">
+          <li class="item">
+            <div class="left">
+              <div class="label">策略思维</div>
+              <div class="note">从游戏中抽象决策框架，迁移到算法设计与题解。</div>
+            </div>
+            <div class="pill">博弈 & 贪心</div>
+          </li>
+          <li class="item">
+            <div class="left">
+              <div class="label">数据与复盘</div>
+              <div class="note">记录胜率、对局时长与关键操作，做轻量数据分析。</div>
+            </div>
+            <div class="pill">可视化</div>
+          </li>
+        </ul>
+
+        <div class="cta">
+          <button class="btn" onclick="alert('今晚 40 分钟上分，20 分钟复盘。')">今晚安排</button>
+          <button class="btn" onclick="alert('记录 3 个关键失误与 3 个亮点。')">复盘要点</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- 学习笔记/作品 -->
+    <section id="notes" class="card" style="margin-top:18px;">
+      <h2>学习笔记与作品</h2>
+      <div class="list">
+        <div class="item">
+          <div class="left">
+            <div class="label">算法可视化小工具</div>
+            <div class="note">用 Canvas 或 WebGL 做排序与图搜索动画。</div>
+          </div>
+          <div class="pill">计划：12 月</div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="label">游戏数据分析</div>
+            <div class="note">抓取对局数据（本地记录），统计关键指标并做热力图。</div>
+          </div>
+          <div class="pill">计划：寒假</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button class="btn primary" onclick="alert('从最小可行版本开始：只做一种算法的可视化。')">从小开始</button>
+        <button class="btn" onclick="alert('把问题拆成 3 步：数据 → 可视化 → 交互。')">拆解任务</button>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 刘达｜把好奇心落到行动里。
+    </footer>
+  </div>
+</body>
+</html>
